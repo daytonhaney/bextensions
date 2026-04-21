@@ -1,0 +1,11 @@
+{
+    "name": "Dark Mode Init",
+    "version": "1.0.0",
+    "description": "Toggle dark mode on the current page with no install-warning permissions.",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Dark Mode Init"
+    }
+}

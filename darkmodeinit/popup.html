@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dark Mode Init</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { width: 160px; padding: 16px; font-family: system-ui, sans-serif; background: #222; color: #fff; text-align: center; }
+        h2 { font-size: 13px; margin-bottom: 12px; color: #888; }
+        button {
+            width: 100%; padding: 12px; border: none; border-radius: 8px;
+            font-size: 16px; font-weight: bold; cursor: pointer;
+            background: #444; color: #fff; transition: 0.2s;
+        }
+        button.on { background: #0a0; }
+        #status { font-size: 11px; margin-top: 10px; color: #666; min-height: 14px; }
+    </style>
+</head>
+<body>
+    <h2>Dark Mode Init</h2>
+    <button id="btn" type="button" aria-pressed="false">Off</button>
+    <div id="status" aria-live="polite"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
