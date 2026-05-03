@@ -26,10 +26,11 @@ If persistent dark mode across all pages is required, the extension would need b
 
 ## Development
 
-1. Open `chrome://extensions`.
-2. Enable Developer mode.
-3. Click `Load unpacked`.
-4. Select this project directory.
+1. Download / clone repo
+2. Open `chrome://extensions`.
+3. Enable Developer mode.
+4. Click `Load unpacked`.
+5. Select this project directory. (darkmodeinit)
 
 ## Files
 
