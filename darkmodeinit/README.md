@@ -1,6 +1,6 @@
 # Dark Mode Init
 
-Dark Mode Init is a minimal Chrome/Chromium extension that toggles a simple dark mode filter on the currently active page.
+Dark Mode Init is a minimal Firefox and Chrome/Chromium extension that toggles a simple dark mode filter on the currently active page.
 
 ## Why it uses minimal permissions
 
@@ -16,7 +16,7 @@ This avoids broad site access warnings during install.
 - Click the extension popup to enable dark mode on the current page.
 - Click it again to disable dark mode on the current page.
 - The effect applies only to the page the user has explicitly invoked the extension on.
-- Restricted browser pages such as `chrome://` are not supported.
+- Restricted browser pages such as `about:` and `chrome://` pages are not supported.
 
 ## Tradeoff
 
@@ -25,6 +25,22 @@ Because the extension does not request `"<all_urls>"` host access, it does not a
 If persistent dark mode across all pages is required, the extension would need broader host permissions, which may trigger install warnings.
 
 ## Development
+
+### Firefox
+
+1. Open `about:debugging`.
+2. Select **This Firefox**.
+3. Click **Load Temporary Add-on**.
+4. Select `manifest.json` in this directory.
+
+Temporary add-ons are removed when Firefox exits. For a normal permanent install,
+the extension must be submitted to Mozilla for signing (either listed on AMO or
+signed as an unlisted self-distributed add-on).
+
+When packaging manually, ZIP the files *inside* this directory so that
+`manifest.json` is at the root of the ZIP, rather than zipping the directory itself.
+
+### Chrome/Chromium
 
 1. Download / clone repo
 2. Open `chrome://extensions`.

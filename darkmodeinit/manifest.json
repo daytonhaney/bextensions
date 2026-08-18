@@ -4,6 +4,14 @@
     "description": "Toggle dark mode on the current page with no install-warning permissions.",
     "manifest_version": 3,
     "permissions": ["activeTab", "scripting"],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "dark-mode-init@local",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
+        }
+    },
     "action": {
         "default_popup": "popup.html",
         "default_title": "Dark Mode Init"
